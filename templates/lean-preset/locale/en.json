@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Lean preset",
+    "description": "Standard tools with earlier compaction, a smaller retained tail, and a tighter tool-output pruner."
+  }
+}

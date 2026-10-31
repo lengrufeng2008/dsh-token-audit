@@ -1,0 +1,8 @@
+node_modules/
+*.log
+audit.json
+report.md
+report.html
+dsh-audit.html
+
+*.tgz

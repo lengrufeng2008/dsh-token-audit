@@ -1,0 +1,56 @@
+{
+  "name": "dsh-token-audit",
+  "version": "0.2.0",
+  "description": "Audit DeepSeek Harness session logs: exact token cost, waste patterns, and a data-driven savings plan. Zero config, local-only.",
+  "type": "module",
+  "bin": {
+    "dsh-token-audit": "bin/dsh-token-audit.mjs"
+  },
+  "exports": {
+    ".": "./plugin/index.js",
+    "./audit": "./src/audit.mjs",
+    "./pricing": "./src/pricing.mjs",
+    "./report": "./src/report.mjs",
+    "./plugin": "./plugin/index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./compare": "./src/compare.mjs"
+  },
+  "files": [
+    "bin",
+    "src",
+    "plugin",
+    "locale",
+    "icon.svg",
+    "README.md",
+    "README.zh.md",
+    "LICENSE",
+    "docs",
+    "templates",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "fzstd": "^0.1.1"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek",
+    "deepseek-harness",
+    "token",
+    "cost",
+    "audit",
+    "cli"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./plugin/cordis.patch.yml"
+    }
+  }
+}

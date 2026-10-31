@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DSH Token Audit — 2026-09-28 to 2026-10-03</title>
+<style>
+:root{--ink:#0f172a;--muted:#64748b;--line:#e2e8f0;--bg:#f8fafc;--card:#fff;--blue:#2563eb;--green:#059669;--amber:#d97706;--red:#dc2626}
+*{box-sizing:border-box}body{margin:0;font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"PingFang SC","Microsoft YaHei",sans-serif;color:var(--ink);background:var(--bg)}
+.wrap{max-width:1040px;margin:0 auto;padding:32px 20px 64px}
+header{background:linear-gradient(135deg,#0f172a,#1e3a8a);color:#fff;border-radius:16px;padding:28px 30px;margin-bottom:20px}
+header h1{margin:0 0 6px;font-size:24px;letter-spacing:-.02em}header p{margin:0;color:#c7d2fe;font-size:14px}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.kpi .v{font-size:22px;font-weight:700;letter-spacing:-.02em}.kpi .l{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px}
+.card h2{margin:0 0 14px;font-size:15px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.row{display:flex;align-items:center;gap:10px;margin:8px 0;font-size:13px}
+.lbl{width:90px;color:var(--muted)}.track{flex:1;height:10px;background:#eef2f7;border-radius:6px;overflow:hidden}.track i{display:block;height:100%;background:var(--blue);border-radius:6px}
+.num{font-variant-numeric:tabular-nums;text-align:right}
+.save{color:var(--green);font-weight:600}
+table{width:100%;border-collapse:collapse;font-size:13px}th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left}th{color:var(--muted);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+td.path{color:var(--muted);max-width:420px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.days{display:flex;align-items:flex-end;gap:4px;height:110px;padding-top:8px}
+.daybar{flex:1;display:flex;flex-direction:column;justify-content:flex-end;height:100%;position:relative}
+.daybar>div{background:linear-gradient(180deg,#60a5fa,#2563eb);border-radius:3px 3px 0 0;min-height:2px}
+.daybar span{position:absolute;bottom:-18px;left:50%;transform:translateX(-50%);font-size:9px;color:var(--muted);white-space:nowrap}
+.card.days-card{padding-bottom:30px}
+.rec{display:flex;gap:10px;align-items:flex-start;padding:10px 0;border-bottom:1px solid var(--line)}.rec:last-child{border:0}
+.rec .idx{width:22px;height:22px;border-radius:50%;background:#dbeafe;color:#1d4ed8;font-size:12px;font-weight:700;display:grid;place-items:center;flex:none;margin-top:2px}
+.rec p{margin:0;flex:1;font-size:13px}.pill{background:#ecfdf5;color:#047857;border:1px solid #a7f3d0;border-radius:999px;padding:2px 8px;font-size:11px;white-space:nowrap;align-self:center}
+.note{color:var(--muted);font-size:12px;margin-top:18px}
+@media(max-width:760px){.kpis,.grid{grid-template-columns:1fr 1fr}}@media(max-width:520px){.kpis,.grid{grid-template-columns:1fr}}
+@media print{body{background:#fff}.wrap{max-width:none}header{background:#0f172a !important;-webkit-print-color-adjust:exact}}
+</style></head><body><div class="wrap">
+<header><h1>DSH Token Audit</h1><p>2026-09-28 → 2026-10-03 · 6 sessions · 1,720 model calls · generated 2026-10-31</p></header>
+<div class="kpis">
+<div class="kpi"><div class="l">Total cost</div><div class="v">CNY 20.99</div></div>
+<div class="kpi"><div class="l">Per active day</div><div class="v">CNY 3.50</div></div>
+<div class="kpi"><div class="l">Projected / month</div><div class="v">CNY 104.95</div></div>
+<div class="kpi"><div class="l">Lean-mode saving</div><div class="v" style="color:var(--green)">CNY 4.56</div></div>
+</div>
+<div class="grid">
+<div class="card"><h2>Where the money went</h2>
+<div class="row"><span class="lbl">Cache read</span><span class="track"><i style="width:32.4%"></i></span><span class="num">CNY 6.81</span></div>
+<div class="row"><span class="lbl">Output</span><span class="track"><i style="width:48.3%;background:#059669"></i></span><span class="num">CNY 10.13</span></div>
+<div class="row"><span class="lbl">Cache miss</span><span class="track"><i style="width:19.3%;background:#d97706"></i></span><span class="num">CNY 4.05</span></div>
+<div class="row"><span class="lbl">Peak hours</span><span class="track"><i style="width:59.6%;background:#dc2626"></i></span><span class="num">CNY 12.51</span></div>
+<p class="note">Cache read is 32.4% of spend; each extra 100k tokens of context is re-read on every call.</p></div>
+<div class="card"><h2>Context pressure</h2><div class="row"><span class="lbl">0–50.0k</span><span class="track"><i style="width:2.6%"></i></span><span class="num">44</span></div><div class="row"><span class="lbl">50.0k–100.0k</span><span class="track"><i style="width:28.0%"></i></span><span class="num">482</span></div><div class="row"><span class="lbl">100.0k–150.0k</span><span class="track"><i style="width:34.9%"></i></span><span class="num">601</span></div><div class="row"><span class="lbl">150.0k–200.0k</span><span class="track"><i style="width:19.4%"></i></span><span class="num">334</span></div><div class="row"><span class="lbl">200.0k–300.0k</span><span class="track"><i style="width:14.9%"></i></span><span class="num">256</span></div><div class="row"><span class="lbl">300.0k–400.0k</span><span class="track"><i style="width:0.2%"></i></span><span class="num">3</span></div><div class="row"><span class="lbl">400.0k–500.0k</span><span class="track"><i style="width:0.0%"></i></span><span class="num">0</span></div><div class="row"><span class="lbl">500.0k–750.0k</span><span class="track"><i style="width:0.0%"></i></span><span class="num">0</span></div><div class="row"><span class="lbl">750.0k+</span><span class="track"><i style="width:0.0%"></i></span><span class="num">0</span></div><p class="note">15% of calls ran above 200k context.</p></div>
+</div>
+<div class="card days-card"><h2>Daily cost (last 6 days)</h2><div class="days"><div class="daybar" title="2026-09-28: CNY 5.81"><div style="height:92.90951093104742%"></div><span>09-28</span></div><div class="daybar" title="2026-09-29: CNY 6.25"><div style="height:100%"></div><span>09-29</span></div><div class="daybar" title="2026-09-30: CNY 4.22"><div style="height:67.54983332563725%"></div><span>09-30</span></div><div class="daybar" title="2026-10-01: CNY 1.68"><div style="height:26.8155613604897%"></div><span>10-01</span></div><div class="daybar" title="2026-10-02: CNY 2.35"><div style="height:37.565900224737575%"></div><span>10-02</span></div><div class="daybar" title="2026-10-03: CNY 0.69"><div style="height:11.027773285997794%"></div><span>10-03</span></div></div></div>
+<div class="grid" style="margin-top:16px">
+<div class="card"><h2>Top sessions</h2><table><thead><tr><th>Cost</th><th>Calls</th><th>Max ctx</th><th>Date</th><th>Session</th></tr></thead><tbody><tr><td class="num">CNY 6.25</td><td class="num">520</td><td class="num">277.6k</td><td>2026-09-29</td><td class="path">Nightly backtest campaign</td></tr><tr><td class="num">CNY 5.81</td><td class="num">380</td><td class="num">236.9k</td><td>2026-09-28</td><td class="path">Refactor the parser</td></tr><tr><td class="num">CNY 4.22</td><td class="num">240</td><td class="num">306.4k</td><td>2026-09-30</td><td class="path">Fix flaky integration tests</td></tr><tr><td class="num">CNY 2.35</td><td class="num">300</td><td class="num">203.3k</td><td>2026-10-02</td><td class="path">Profile the ingest pipeline</td></tr><tr><td class="num">CNY 1.68</td><td class="num">160</td><td class="num">162.8k</td><td>2026-10-01</td><td class="path">Write the migration guide</td></tr><tr><td class="num">CNY 0.69</td><td class="num">120</td><td class="num">106.5k</td><td>2026-10-03</td><td class="path">Review the release diff</td></tr></tbody></table></div>
+<div class="card"><h2>Savings plan (gross)</h2><table><thead><tr><th>Change</th><th>Saving</th><th>%</th></tr></thead><tbody><tr><td>Context cap 100k</td><td class="num save">CNY 2.26</td><td class="num">10.8%</td></tr><tr><td>Context cap 150k</td><td class="num save">CNY 0.93</td><td class="num">4.4%</td></tr><tr><td>Context cap 200k</td><td class="num save">CNY 0.26</td><td class="num">1.2%</td></tr><tr><td>Context cap 250k</td><td class="num save">CNY 0.03</td><td class="num">0.1%</td></tr><tr><td>Context cap 300k</td><td class="num save">CNY 0.00</td><td class="num">0.0%</td></tr><tr><td>Output tokens −20%</td><td class="num save">CNY 2.03</td><td class="num">9.7%</td></tr><tr><td>Shift 40% of peak work to off-peak</td><td class="num save">CNY 2.50</td><td class="num">11.9%</td></tr></tbody></table><p class="note">Estimates assume behavior is unchanged. Context caps trade memory for money; validate quality before adopting.</p></div>
+</div>
+<div class="card" style="margin-bottom:16px"><h2>Cost by workspace</h2><table><thead><tr><th>Cost</th><th>Sessions</th><th>Calls</th><th>Workspace</th></tr></thead><tbody><tr><td class="num">CNY 20.99</td><td class="num">6</td><td class="num">1720</td><td class="path">/demo/workspace</td></tr></tbody></table></div>
+<div class="card" style="margin-bottom:16px"><h2>Tool output entering context</h2><table><thead><tr><th>Tool</th><th>Characters</th><th>Share</th></tr></thead><tbody><tr><td>bash</td><td class="num">4.2M</td><td class="num">59.3%</td></tr><tr><td>read</td><td class="num">2.9M</td><td class="num">40.7%</td></tr></tbody></table><p class="note">Most re-read: 51× src/ingest.rs · 50× docs/ARCHITECTURE.md · 49× tests/integration.rs</p></div>
+<div class="card"><h2>What to do first</h2><div class="rec"><span class="idx">1</span><p>60% of spend landed in peak hours (09-12, 14-18 Beijing). Move batch jobs, backtests and long agent runs after 18:00 or before 09:00; idle prices are half.</p><span class="pill">up to CNY 2.50</span></div><div class="rec"><span class="idx">2</span><p>Output is 48% of cost. Use reasoningEffort &quot;high&quot; instead of &quot;max&quot; for routine steps, cap answer length, and avoid restating plans in the final answer.</p><span class="pill">up to CNY 2.03</span></div><div class="rec"><span class="idx">3</span><p>The 10 most expensive sessions are 100% of spend. Audit those first: trim their tool output, compact earlier, and split independent tasks into fresh sessions.</p></div></div>
+<p class="note">Pricing: DeepSeek official, peak/idle, CNY per million tokens (2026-10-31). Peak = Beijing weekdays 09:00–12:00 and 14:00–18:00, excluding China statutory holidays. Generated locally from session logs; no data was uploaded.</p>
+<p class="note">Generated by <a href="https://www.npmjs.com/package/dsh-token-audit">dsh-token-audit</a> · <code>npx dsh-token-audit</code></p>
+</div></body></html>
