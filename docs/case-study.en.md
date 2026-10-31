@@ -98,4 +98,4 @@ It can also generate the Lean preset (`dsh-token-audit preset`) and verify a cha
 
 Run the free audit, change the top three items, and measure again next week. If you want the configuration done and verified, the repo's `docs/service.md` describes a fixed-scope engagement: report first, payment after.
 
-Repository: `https://github.com/<your-github>/dsh-token-audit` (replace after publishing).
+Repository: `https://github.com/lengrufeng2008/dsh-token-audit` (replace after publishing).

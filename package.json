@@ -52,5 +52,14 @@
     "bundle": {
       "patch": "./plugin/cordis.patch.yml"
     }
+  },
+  "author": "lengrufeng2008",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lengrufeng2008/dsh-token-audit.git"
+  },
+  "homepage": "https://github.com/lengrufeng2008/dsh-token-audit#readme",
+  "bugs": {
+    "url": "https://github.com/lengrufeng2008/dsh-token-audit/issues"
   }
 }

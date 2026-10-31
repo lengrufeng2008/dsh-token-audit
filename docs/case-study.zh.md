@@ -98,4 +98,4 @@ dsh plugin --profile web add dsh-token-audit
 
 如果你也在为 DSH 账单头疼，先跑一遍免费审计，把报告里的前三项改掉。需要有人把配置改完并做前后验证，可以看仓库里的 `docs/service.md`：固定范围、固定价格、先看报告再决定。
 
-工具地址：`https://github.com/<your-github>/dsh-token-audit`（发布后替换）。
+工具地址：`https://github.com/lengrufeng2008/dsh-token-audit`（发布后替换）。
